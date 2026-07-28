@@ -34,3 +34,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# AI-DLC — per-user session cursors and machine-local runtime (ignored).
+# Everything else under aidlc/ (method, state, audit shards, artifacts) is committed.
+aidlc/active-space
+aidlc/spaces/*/intents/active-intent
+aidlc/.aidlc-clone-id
+aidlc/.aidlc-turn-counter
+aidlc/.aidlc-readonly-latch
+aidlc/.aidlc-sessions/
+aidlc/spaces/*/intents/*/runtime-graph.json
+aidlc/spaces/*/intents/*/.aidlc-*
+aidlc/diagnostics/
